@@ -10,10 +10,11 @@
         multi 
         line
         answerm
+
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer
+    >   answer: El comando grep busca y escoge lineas de algún archivo específico que contenga una cadena de caracteres dados. A partir de unos comandos (u opciones) es posible 
 
 2.  What is a *makefile*?
     >   answer

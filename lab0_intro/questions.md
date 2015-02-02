@@ -14,10 +14,10 @@
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer: El comando grep busca y escoge lineas de algún archivo específico que contenga una cadena de caracteres dados. A partir de unos comandos (u opciones) es posible 
+    >   answer: El comando grep busca y escoge lineas de algún archivo específico que contenga una cadena de caracteres dados. A partir de unos comandos (u opciones) específicos es posible imprimir el número de líneas que contienen la cadena de caracteres, imprimir el número y las lineas respectivas que contengan la palabra, teniendo en cuenta -o ignorando segun la opción- mayúsculas, coincidencias de palabras completas, caracteres únicos, etc.
 
 2.  What is a *makefile*?
-    >   answer
+    >   answer: es un comomando para compilar un archivo
 
 3.  What is *git*?
     >   answer

@@ -1,14 +1,15 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   answer
+    > https://github.com/alejandracastilla/lab_vision.git   
 
 2.  What is the output of the ``cal`` command?
-
-        multi
+    > El comando 'cal' muestra el mes actual en la linea de comando 
+    > Al utilizar el comando cal [año], se obtiene la respuesta de todo el calendario del año respectivo.
+    
+        multi 
         line
-        answer
-
+        answerm
 # Homework Questions
 
 1.  What is the ``grep``command?

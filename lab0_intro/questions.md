@@ -23,10 +23,12 @@
     >   answer: git es el software que  presta el servicio de control de versiones. Éste puede ser llamado desde la terminal para interactual con el repositorio, que es entonces donde está almacenado el codigo fuente y sus diferentes versiones que cada programador modifica. Git guarda estas versiones y cada programador podrá ver el adelanto del programa que cada trabajor está haciendo en su diferente versión del codigo fuente.
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer: 
+    >   answer: la opcion -prune es una acción que trabaja sobre directorios y previene entrar a directorios en esa condicion.  Prune retorna / imprime los archivos relacionados si ninguna otra opción es especificada.
+
+Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale' -print
 
 5.  Where is the file ``xxxxxx``
-    >   answer
+    >   answer: este es un archivo único temporal. son huellas de una conexión. Es decir, cuando se sube un archivo PEN, por procesamiento, obtenemos dos archivos. Un archivo IDS y otro PDF. estos se encuentran en el sistema de administración estudiantil. (fuente url de consulta: https://www.bced.gov.bc.ca/pen/schools/return.htm)
 
 6.  How many files with ``gnu`` in its name are in ``dir``
     >   answer

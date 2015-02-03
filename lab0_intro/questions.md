@@ -31,10 +31,10 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
     >   answer: este es un archivo único temporal. son huellas de una conexión. Es decir, cuando se sube un archivo PEN, por procesamiento, obtenemos dos archivos. Un archivo IDS y otro PDF. estos se encuentran en el sistema de administración estudiantil. (fuente url de consulta: https://www.bced.gov.bc.ca/pen/schools/return.htm)
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   answer: gnu find -> siete (no estoy segura si lo estoy haciendo bien).
+    >   answer: gnu find -> 0
 
 7.  How many files contain ``gpl`` inside in ``dir``
-    >   answer: una
+    >   answer: 0
 
 8.  What does the ``cut`` command do?
     >   answer: como su nombre lo indica, este comando se utiliza para cortar cadena de caracteres cortados de lineas de texto. cut [options].

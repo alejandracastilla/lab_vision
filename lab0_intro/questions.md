@@ -82,5 +82,5 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
         (fuente de búsqueda: http://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean)
 
 17. How many unique images are in the ``sipi_images`` folder?
-    >   answer: 
+    >   answer: Debido a no poder conectarme a Guitaca, no encontré la cantidad de unique images en 'sipi_images'
     

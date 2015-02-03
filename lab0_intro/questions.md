@@ -52,10 +52,15 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
     >   answer:
+                "who que produce un informe de los usuarios que están
+                conectados actualmente al sistema. Cada una de las líneas que muestra hace referencia a un usuario,
+                y da su nombre de usuario, el terminal al que está conectado, la fecha y hora de entrada al sistema." 
+                url de referencia: http://www.uco.es/~in1lurom/materialDocente/apuntesSO.pdf
                 grep -i /dev/dfa /etc/fstab | cut --fields==-3
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer: lsmod
+    >   answer: (teniendo en cuenta que los interpretes de usuarios (la terminal) es denominada shell)
+                El comando que produce el numero de usuarios con shell
 
 14.  What is the name of the linux distribution running on *Guitaca*?
     >   answer: 
@@ -69,7 +74,8 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
         (fuente de busqueda: http://laotraboladecristal.com/2011/10/08/encuentra-archivos-duplicados-rapidamente)
         
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
-    >   answer: cuando los primeros caracteres en un script son #!, se conoce como shebang. Cuando se dice #!/bin/bash es tal que el programa bash esta siendo ussado para interpretar el resto del archivo. Bash resulta ser uno de los shell de defult más usados en Linux.
+    >   answer: cuando los primeros caracteres en un script son #!, se conoce como shebang. Cuando se dice #!/bin/bash es tal         que el programa bash esta siendo ussado para interpretar el resto del archivo. Bash resulta ser uno de los shell de          defult más usados en Linux.
+        Asimismo, bash es el comando para generar un número aleatorio (esto no lo entendí).
         (fuente de búsqueda: http://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean)
 
 17. How many unique images are in the ``sipi_images`` folder?

@@ -64,7 +64,7 @@ Por ejemplo, find . -script . -prune -o -script2 -prune -o script3 '*ale' -print
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer: (teniendo en cuenta que los interpretes de usuarios (la terminal) es denominada shell)
                 El comando que produce el numero de usuarios con shell
-                $ grep -v nologin
+                $ grep -c nologin
 
 14.  What is the name of the linux distribution running on *Guitaca*?
     >   answer: No pude encontrarlo (o pude conectarme a Guitaca desde mi casa :( No me dejó entrar con el Cd tampoco en los computadores de la          Universidad.
@@ -73,8 +73,8 @@ Por ejemplo, find . -script . -prune -o -script2 -prune -o script3 '*ale' -print
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
-    find -not -empty -type f -printf 
-    f dupes es un comando para encontrar archivos duplicados dentro de un directorio especificado.
+        find -not -empty -type f -printf 
+        f dupes es otro comando para encontrar archivos duplicados dentro de un directorio especificado.
         
         fdupes /home/Documents/Sipi_images
         (fuente de busqueda: http://laotraboladecristal.com/2011/10/08/encuentra-archivos-duplicados-rapidamente)

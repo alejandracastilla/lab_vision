@@ -17,13 +17,13 @@
     >   answer: El comando grep busca y escoge lineas de algún archivo específico que contenga una cadena de caracteres dados. A partir de unos comandos (u opciones) específicos es posible imprimir el número de líneas que contienen la cadena de caracteres, imprimir el número y las lineas respectivas que contengan la palabra, teniendo en cuenta -o ignorando segun la opción- mayúsculas, coincidencias de palabras completas, caracteres únicos, etc.
 
 2.  What is a *makefile*?
-    >   answer: es un comomando para compilar un archivo
+    >   answer: es un archivo de texto en el que yace informacion valiosa paa compilar el software, optimizarlo, o instalas ejecutables, manuales y confirguraciones de archivos.
 
 3.  What is *git*?
-    >   answer
+    >   answer: git es el software que  presta el servicio de control de versiones. Éste puede ser llamado desde la terminal para interactual con el repositorio, que es entonces donde está almacenado el codigo fuente y sus diferentes versiones que cada programador modifica. Git guarda estas versiones y cada programador podrá ver el adelanto del programa que cada trabajor está haciendo en su diferente versión del codigo fuente.
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer
+    >   answer: 
 
 5.  Where is the file ``xxxxxx``
     >   answer

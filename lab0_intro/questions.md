@@ -25,7 +25,7 @@
 4.  What does the ``-prune`` option of ``find`` do? Give an example
     >   answer: la opcion -prune es una acción que trabaja sobre directorios y previene entrar a directorios en esa condicion.  Prune retorna / imprime los archivos relacionados si ninguna otra opción es especificada.
 
-Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale' -print
+Por ejemplo, find . -script . -prune -o -script2 -prune -o script3 '*ale' -print
 
 5.  Where is the file ``xxxxxx``
     >   answer: este es un archivo único temporal. son huellas de una conexión. Es decir, cuando se sube un archivo PEN, por procesamiento, obtenemos dos archivos. Un archivo IDS y otro PDF. estos se encuentran en el sistema de administración estudiantil. (fuente url de consulta: https://www.bced.gov.bc.ca/pen/schools/return.htm)
@@ -52,11 +52,12 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
     >   answer:
+                who -a -H
                 "who que produce un informe de los usuarios que están
                 conectados actualmente al sistema. Cada una de las líneas que muestra hace referencia a un usuario,
                 y da su nombre de usuario, el terminal al que está conectado, la fecha y hora de entrada al sistema." 
                 url de referencia: http://www.uco.es/~in1lurom/materialDocente/apuntesSO.pdf
-                grep -i /dev/dfa /etc/fstab | cut --fields==-3
+                (grep -i /dev/dfa /etc/fstab | cut --fields==-3)
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer: (teniendo en cuenta que los interpretes de usuarios (la terminal) es denominada shell)

@@ -31,39 +31,46 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
     >   answer: este es un archivo único temporal. son huellas de una conexión. Es decir, cuando se sube un archivo PEN, por procesamiento, obtenemos dos archivos. Un archivo IDS y otro PDF. estos se encuentran en el sistema de administración estudiantil. (fuente url de consulta: https://www.bced.gov.bc.ca/pen/schools/return.htm)
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   answer
+    >   answer: gnu find -> siete (no estoy segura si lo estoy haciendo bien).
 
 7.  How many files contain ``gpl`` inside in ``dir``
-    >   answer
+    >   answer: una
 
 8.  What does the ``cut`` command do?
-    >   answer
+    >   answer: como su nombre lo indica, este comando se utiliza para cortar cadena de caracteres cortados de lineas de texto. cut [options].
 
 9.  What does the ``wget`` command do?
-    >   answer
+    >   answer: este comando se puede obtener para descargar archivos en linux. Por ejemplo, es posible descargar un comrpimido de la siguiente manera: wget http://ejemplo.com/programa.tar.gz
+(fuente url de consulta: http://kimberling146.blogspot.com/2014/04/uso-del-comando-wget-en-linux.html)
 
 10.  What does the ``diff`` command do?
-    >   answer
+    >   answer: este comando se utiliza para encontrar diferencias en los archivos. Una manera es comparar los archivos de texto linea por linea. Existen diversas opciones que permiten ignorar la cantidad de espacios en blanco, mayusculas, entre subdirectorios, informar cuando dos archicos sean iguales, entre otras. (fuente url de consulta: https://www.hscripts.com/es/tutoriales/linux-commands/diff.html)
 
 11.  How many users exist in *Guitaca*?
-    >   answer
+    >   answer: 34
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer
+    >   answer: así: http://en.wikipedia.org/wiki/Comparison_of_command_shells#mediaviewer/File:Bash_screenshot.png
+        grep -i /dev/dfa /etc/fstab | cut --fields==-3
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   answer: lsmod
 
 14.  What is the name of the linux distribution running on *Guitaca*?
-    >   answer
+    >   answer: 
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
-
+    f dupes es un comando para encontrar archivos duplicados dentro de un directorio especificado.
+        
+        fdupes /home/Documents/Sipi_images
+        (fuente de busqueda: http://laotraboladecristal.com/2011/10/08/encuentra-archivos-duplicados-rapidamente)
+        
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
-    >   answer
+    >   answer: cuando los primeros caracteres en un script son #!, se conoce como shebang. Cuando se dice #!/bin/bash es tal que el programa bash esta siendo ussado para interpretar el resto del archivo. Bash resulta ser uno de los shell de defult más usados en Linux.
+        (fuente de búsqueda: http://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean)
 
 17. How many unique images are in the ``sipi_images`` folder?
-    >   answer
+    >   answer: 
     

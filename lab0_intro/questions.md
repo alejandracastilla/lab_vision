@@ -61,9 +61,10 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer: (teniendo en cuenta que los interpretes de usuarios (la terminal) es denominada shell)
                 El comando que produce el numero de usuarios con shell
+                $ grep -v nologin
 
 14.  What is the name of the linux distribution running on *Guitaca*?
-    >   answer: (o pude conectarme a Guitaca desde mi casa :( No me dejó entrar con el Cd tampoco en los computadores de la          Universidad.
+    >   answer: No pude encontrarlo (o pude conectarme a Guitaca desde mi casa :( No me dejó entrar con el Cd tampoco en los computadores de la          Universidad.
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use

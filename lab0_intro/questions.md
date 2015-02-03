@@ -59,6 +59,8 @@ Por ejemplo, find . -script . -prune -o -script2 -prune -o script3 '*ale' -print
                 url de referencia: http://www.uco.es/~in1lurom/materialDocente/apuntesSO.pdf
                 (grep -i /dev/dfa /etc/fstab | cut --fields==-3)
 
+                fuente de búsqueda: http://www.computerhope.com/unix/uwho.htm
+
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer: (teniendo en cuenta que los interpretes de usuarios (la terminal) es denominada shell)
                 El comando que produce el numero de usuarios con shell

@@ -68,6 +68,8 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
+
+    find -not -empty -type f -printf 
     f dupes es un comando para encontrar archivos duplicados dentro de un directorio especificado.
         
         fdupes /home/Documents/Sipi_images

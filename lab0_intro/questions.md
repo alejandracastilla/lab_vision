@@ -37,7 +37,7 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
     >   answer: 0
 
 8.  What does the ``cut`` command do?
-    >   answer: como su nombre lo indica, este comando se utiliza para cortar cadena de caracteres cortados de lineas de texto. cut [options].
+    >   answer: como su nombre lo indica, este comando se utiliza para cortar cadena de caracteres cortados de lineas de texto. Esqueleto: cut [options].
 
 9.  What does the ``wget`` command do?
     >   answer: este comando se puede obtener para descargar archivos en linux. Por ejemplo, es posible descargar un comrpimido de la siguiente manera: wget http://ejemplo.com/programa.tar.gz
@@ -47,11 +47,12 @@ Por ejemplo, find . -script .snapshot -prune -o -script2 -prune -o script3 '*ale
     >   answer: este comando se utiliza para encontrar diferencias en los archivos. Una manera es comparar los archivos de texto linea por linea. Existen diversas opciones que permiten ignorar la cantidad de espacios en blanco, mayusculas, entre subdirectorios, informar cuando dos archicos sean iguales, entre otras. (fuente url de consulta: https://www.hscripts.com/es/tutoriales/linux-commands/diff.html)
 
 11.  How many users exist in *Guitaca*?
-    >   answer: 34
+    >   answer: si se utiliza el comando visto en clase etc/pssword se encuentran 48 usuarios. 
+        Sin embargo, al utilizar el comando who se observan menos lineas.
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer: así: http://en.wikipedia.org/wiki/Comparison_of_command_shells#mediaviewer/File:Bash_screenshot.png
-        grep -i /dev/dfa /etc/fstab | cut --fields==-3
+    >   answer:
+                grep -i /dev/dfa /etc/fstab | cut --fields==-3
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer: lsmod

@@ -81,12 +81,12 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
     
     What is the dimension of the output?
 
-    >   Answer
+    >   Answer: La dimensión del output 256x256 uint8
 
 3.  Read the ``4.2.03`` image
     What is the dimension of the output?
 
-    >   Answer
+    >   Answer: La dimension de 4.2.03 512x512x3 uint8
 
 ## Displaying Images
 
@@ -99,7 +99,11 @@ The following commands can be used for displaying images
 2.  Try displaying the images read in the previous point using both commands
 3.  What are the differences?
 
-    >   Answer
+    >   Answer: las diferencias de utilizar los comandos consisten en que image permite expandir la imagen mientras imshow la         otra no, coordenadas de la imagen meintras que imshow es como una gráfica simplemente.
+        Asimismo, 	Image es una funcióon de intensidades. Practicamente, este es un comando que visualiza la imagen como una         matriz de números. Al usar este comando los colores toman un sinsentido. De hecho, al aplicar un colormap podría dar         resultados inesperados. Esto fue comprobado al visualizar la primera imagen y resultar una imagen con un filtro              amarillo que no poseía la imagen inicial.
+    	imshow es un comando para visualizar. Por lo tanto, toma una matriz como una imagen. 
+      	Sin mebargo, la unica diferencia notable de las imágenes es que al utilizar image se observa un eje en la imagen que         puede ser activado o desactivado. 
+
 
 ## Writing Images
 

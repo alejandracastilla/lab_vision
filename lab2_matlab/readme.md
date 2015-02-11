@@ -78,12 +78,13 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
 
 1.  Look at the manual page for the command
 2.  Read the ``5.1.12`` image
-    
+    >   Answer:    im1= imread('5.1.12.tiff');
     What is the dimension of the output?
 
     >   Answer: La dimensión del output 256x256 uint8
 
 3.  Read the ``4.2.03`` image
+    im2=imread('4.2.03.tiff'); 
     What is the dimension of the output?
 
     >   Answer: La dimension de 4.2.03 512x512x3 uint8
@@ -97,13 +98,25 @@ The following commands can be used for displaying images
 
 1.  Look at their manual pages
 2.  Try displaying the images read in the previous point using both commands
+    %% imprimir imagen 1
+        imshow(im1); title('imagen 5.1.12 con imshow')
+        ax(2) = subplot(1,2,2);
+        image(im1)
+        title('imagen 5.1.12 con image')
+    %% imprimir imagen 2
+        figure (2)
+        ax(3) = subplot(1,2,1);
+        imshow(im2); title('imagen 4.2.03 con imshow')
+        ax(4) = subplot(1,2,2);
+        image (im2); title('imagen 4.2.03 con image')
+
 3.  What are the differences?
 
     >   Answer: las diferencias de utilizar los comandos consisten en que image permite expandir la imagen mientras imshow la         otra no, coordenadas de la imagen meintras que imshow es como una gráfica simplemente.
         Asimismo, 	Image es una funcióon de intensidades. Practicamente, este es un comando que visualiza la imagen como una         matriz de números. Al usar este comando los colores toman un sinsentido. De hecho, al aplicar un colormap podría dar         resultados inesperados. Esto fue comprobado al visualizar la primera imagen y resultar una imagen con un filtro              amarillo que no poseía la imagen inicial.
     	imshow es un comando para visualizar. Por lo tanto, toma una matriz como una imagen. 
       	Sin mebargo, la unica diferencia notable de las imágenes es que al utilizar image se observa un eje en la imagen que         puede ser activado o desactivado. 
-
+      	Funte de búsqueda: mathworks and help into matlab
 
 ## Writing Images
 
@@ -111,8 +124,15 @@ The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is us
 
 1.  Look at the manual page
 2.  Write one of the images from before as png and as jpg
+    > imwrite(im1,map,'5.1.12.png')
+    > imwrite(im1,map,'5.1.12.jpg')
 3.  Write a matlab function that takes the path of an image and converts it to jpg
-
+    tojpg(imagen)
+        %% Función tojpg
+            function rta = tojpg(im)
+            [pathstr,name,ext]=fileparts('im');
+            imwrite(im, [ name, '.jpg']);
+            end
 ## Matlab and the shell
 
 ### Shell from Matlab
@@ -122,7 +142,7 @@ or by using a [bang](http://www.mathworks.com/help/matlab/matlab_env/run-externa
 
 1.  Look at the manual pages
 2.  Try it (for example ``!ps``)
-
+        ls también funciona! (cool)
 ### Matlab from the shell
 
 It is also possible to invoke matlab in a non interactive mode to run a script from the terminal. If the matlab

@@ -98,6 +98,7 @@ The following commands can be used for displaying images
 
 1.  Look at their manual pages
 2.  Try displaying the images read in the previous point using both commands
+```
     %% imprimir imagen 1
         imshow(im1); title('imagen 5.1.12 con imshow')
         ax(2) = subplot(1,2,2);
@@ -109,6 +110,7 @@ The following commands can be used for displaying images
         imshow(im2); title('imagen 4.2.03 con imshow')
         ax(4) = subplot(1,2,2);
         image (im2); title('imagen 4.2.03 con image')
+```
 
 3.  What are the differences?
 
@@ -124,15 +126,20 @@ The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is us
 
 1.  Look at the manual page
 2.  Write one of the images from before as png and as jpg
+```
     > imwrite(im1,map,'5.1.12.png')
     > imwrite(im1,map,'5.1.12.jpg')
+```
 3.  Write a matlab function that takes the path of an image and converts it to jpg
+```
     tojpg(imagen)
+
         %% Función tojpg
             function rta = tojpg(im)
             [pathstr,name,ext]=fileparts('im');
             imwrite(im, [ name, '.jpg']);
             end
+```
 ## Matlab and the shell
 
 ### Shell from Matlab
@@ -142,7 +149,9 @@ or by using a [bang](http://www.mathworks.com/help/matlab/matlab_env/run-externa
 
 1.  Look at the manual pages
 2.  Try it (for example ``!ps``)
+```
         ls también funciona! (cool)
+```
 ### Matlab from the shell
 
 It is also possible to invoke matlab in a non interactive mode to run a script from the terminal. If the matlab

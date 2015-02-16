@@ -158,9 +158,9 @@ It is also possible to invoke matlab in a non interactive mode to run a script f
 binary is on the system PATH you can do something like this
 
 ```bash
-matlab -nodisplay -nosplash -r "write_jpg('boat.512.tiff'); exit"
-# or
-matlab -nodisplay -nosplash script.m"
+    matlab -nodisplay -nosplash -r "write_jpg('boat.512.tiff'); exit"
+    # or
+    matlab -nodisplay -nosplash script.m"
 ```
 If the command or script doesn't end in ``exit`` the matlab shell will stay open, and will block the bash script.
 
@@ -183,7 +183,7 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 2.  Try the diffente noise types, and save the noisy images to the repository (5 images)
 3.  Try saving noisy images as jpg, what happens?
 
-    > Answer
+    > Es posible visualizar las imagenes en los dos formatos. Archivo adjunto se sube las imágenes (repository)
 
 ### Median filter
 
@@ -197,7 +197,7 @@ These filters can be applied to a an image in order to remove noise.
 3.  Try different sizes for the filters
 4.  Which filter works best for salt & pepper noise?
 
-    > Answer
+    > El mejor filtro para eliminar ruido de sal y pimienta es el mediano debido a que es un filtro más robusto que permite      eliminar outliers.
 
 For more on noise removal read http://www.mathworks.com/help/images/noise-removal.html
 

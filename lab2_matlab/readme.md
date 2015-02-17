@@ -191,7 +191,9 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 3.  Try saving noisy images as jpg, what happens?
 
     ```bash
-    El ruido creado en imágenes .jpg es amplificado en comparación con las imágenes en .tiff. No obstante la diferencia sólo     es notoria cuando se ve de cerca los píxeles relativos al ruido impulsional creado por salt and peppers.
+    El ruido creado en imágenes .jpg es amplificado en comparación con las imágenes en .tiff. 
+    No obstante la diferencia sólo es notoria cuando se ve de cerca los píxeles relativos al ruido impulsional 
+    creado por salt and peppers.
     ```
 
 ### Median filter
@@ -229,12 +231,14 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) function lets us sharpen an image. 
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
-
+``` bash
     > Debido a que se ha aplicado un realce, se observa mejor los bordes y los detalles de la imagen.
-
+```
 2.  Sharp a blurred image. What do you notice?
-
-    > Se ha perdido el efecto de realce que tuvo la imagen no borrosa. Al querer resaltar una imagen suavizada, se obtiene un     realce menos definido.
+``` bash
+    > Se ha perdido el efecto de realce que tuvo la imagen no borrosa. 
+    Al querer resaltar una imagen suavizada, se obtiene un     realce menos definido.
+    ```
 
 ### Edge detection
 
@@ -248,10 +252,11 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
-
+``` bash
     > Answer:  La diferencia radica en que sobel posee una máscara tal que los valores externos de la columna central (si es un filtro orizontal) o de la fila central (si es un filtro vertical) tienen un peso mayor que el résto de los pixeles en el kernel o máscara de filtrado. En contraste, la máscara que utiliza Prewitt posee el mismo valor para cada píxel externo a la fila o columna central (-1 y 1). En este punto es importante resaltar que tanto sobel como prewitt detectan los bordes a partir del cálculo de gradiente a partor de discretas diferencias entre columnas y filas. Es por esto que utilizan signos negativos en una fila (o columna) extrema a otra, la cual tiene los mismos valores, pero con signo opuesto.
 .
 fuente: https://globaljournals.org/GJCST_Volume12/5-Study-and-Comparison-of-Different-Edge.pdf
+```
 
 
 More sophisticated methods for finding edges can be found in the following pages
@@ -306,12 +311,14 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 1.  Read the manual page
 2.  Create a four level pyramid from the ``5.1.12`` clock  image
 3.  At what level does the people in the picture dissappear?
-
+``` bash
     >   Desaparece en el tercer nivel de la pirámide
+    ```
     
 4.  At what level does the numbers in the clock disappear?
-
+```
     >   Los números desaparecen en el segundo nivel
+    ```
 
 ## Template Matching
 
@@ -350,7 +357,7 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     imshow(rgb);
     ```
 6.  Explain what the above code does
-```
+```bash
     > Answer:
     %% El código recibe un template, es decir, una imagen plantilla (train) la cual se buscaráen la imagen (image)
     c=normxcorr2(train,image); %%-> Se realiza la crosscorrelación normalizada entre train y la imagen

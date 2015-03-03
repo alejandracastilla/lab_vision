@@ -48,13 +48,21 @@ Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images
 
 - Upload the full matlab script used to generate the image to the repository
 - Upload the final image to the repository
-
+    ```bash
+    las imágenes finales se llaman 'hybrid' y 'hybrid_prueba',
+    están es las carpetas 'Resultado_img_propias' y 'Resultado_img_prueba'
+    ```
 ### Visualization
 
 In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
 
 - Create such a visualization for your image
 - Upload it to the repository
+
+    ```bash
+    las imágenes pirámide se llaman 'rta_piramide' y 'rta_piramide_prueba',
+    están es las carpetas 'Resultado_img_propias' y 'Resultado_img_prueba respectivamente'
+    ```
 
 ## Homework
 
@@ -67,13 +75,32 @@ Create a hybrid image based on images from your own collections. The more origin
 - Be creative
 - Avoid images downloaded from internet
 
+    ```bash
+    Para esta tarea he escogido dos imágenes mías. Con la intención de alinearlas (acoplarlas, hacerlas coincidir),
+    he seleccionado dos fotografías, en las cuales se ve mi cara y mi sonrisa abiertamente.
+    ```
+    
 Notice that you will have to align the images to increase the effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect.
 
 Finally, upload to the repository 
 
 - The original images
+    ```bash
+    las imágenes originales se llaman 'im1' e 'im2',
+    están en la carpeta madre 'lab03_hybrid'
+    ```
 - The final hybrid image
+    ```bash
+    las imagen híbrida resultado se llama 'hybrid'
+    están en la carpeta madre 'lab03_hybrid'
+    ```
 - The pyramid
+    ```bash
+    la pirámide se llama 'rta_piramide'
+    está es las carpetas 'Resultado_img_propias'
+    ```
 - The code you used
-
+    ```bash
+    El código se encuentra en la carpeta madre, con el nombre de macastilla964_lab03
+    ```
 **DUE**: 3 /3 /2015 ; 8:00 a.m. 

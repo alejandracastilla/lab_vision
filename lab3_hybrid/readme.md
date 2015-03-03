@@ -52,7 +52,6 @@ Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images
     las imágenes finales se llaman 'hybrid' y 'hybrid_prueba',
     están es las carpetas 'Resultado_img_propias' y 'Resultado_img_prueba'
     ```
-
 ### Visualization
 
 In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
